@@ -14,3 +14,10 @@ Run this app locally by doing the following:
 - Finally run <code>python run.py</code> and go to <code>localhost:5000</code> on your browser. 
 
 You may need to run <code>pip install -r requirements.txt</code> to install dependencies when they're there. 
+
+## Flask Resources
+
+If you're new to the stack:
+
+- Learn basic Python [here](http://www.codecademy.com/tracks/python)
+- Read the Flask documentation [here](http://flask.pocoo.org/docs/0.10/)
