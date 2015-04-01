@@ -21,3 +21,7 @@ If you're new to the stack:
 
 - Learn basic Python [here](http://www.codecademy.com/tracks/python)
 - Read the Flask documentation [here](http://flask.pocoo.org/docs/0.10/)
+
+## Contact the Team
+
+Shoot me an email [here](mailto:arsalan@curious.io) or shout out on [Twitter](http://twitter.com/Arsalan_Bashir)
