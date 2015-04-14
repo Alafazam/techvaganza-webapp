@@ -1,0 +1,21 @@
+{
+  "name": "vedge",
+  "version": "0.0.0",
+  "description": "your guide to vegetarian restaurants",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "curiousIO"
+  ],
+  "license": "MIT",
+  "homepage": "http://vedge.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

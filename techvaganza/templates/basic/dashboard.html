@@ -1,0 +1,67 @@
+{% extends "basic/base.html" %}
+	{% block content %}
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-10 column">
+			<div class="page-header">
+				<h1>
+					{{user.firstname}} {{user.lastname}} <i><small><small><a href="/edit">Edit your Profile</a></small></small></i>
+				</h1>
+			</div>
+		</div>
+		<div class="col-md-2 column">
+			{% if user.user_status == 1 %}
+			<ul class="nav nav-pills admin-top">
+				<li class="active">
+					 <a href="/notifications">Notifications</a>
+				</li>
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-8 column">
+			<h3>
+				Recommended Restaurants
+			</h3>
+			<div class="row">
+				{% for recommendation in recommendations %}
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="{{recommendation.image}}" />
+						<div class="caption">
+							<h3>
+								{{recommendation.name}}
+							</h3>
+							<p>
+								{{recommendation.location}}
+							</p>
+							<p>
+								<a class="btn btn-primary" href="/restaurant/{{recommendation.name}}/dishes">See the Dishes at {{recommendation.name}}</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="col-md-4 column">
+			<h3>
+				Try this Dish
+			</h3>
+					<div class="thumbnail">
+						<img alt="300x200" src="{{favdish.image}}" />
+						<div class="caption">
+							<h3>
+								{{favdish.name}}
+							</h3>
+							<p>
+								{{favdish.top_review}}
+							</p>
+						</div>
+					</div>
+		</div>
+	</div>
+</div>
+
+	{% endblock %}
