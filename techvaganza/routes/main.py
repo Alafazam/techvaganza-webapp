@@ -1,6 +1,6 @@
 from techvaganza import app, forms, models, db
 from flask import render_template, request, jsonify, redirect, url_for, session
-from app.models.scenes import City, Moderator, Restaurant, Restaurantreview, Dish, Dishreview, Modnotification
+from app.models.scenes import City, Moderator, Modnotification
 from flask.ext.login import LoginManager, login_user, current_user, logout_user, login_required
 from werkzeug import secure_filename
 import urllib, user

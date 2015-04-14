@@ -50,4 +50,4 @@ env.register(
 
 env.versions = 'timestamp'
 
-from app import methods, routes, models
+from techvaganza import methods, routes, models

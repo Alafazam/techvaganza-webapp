@@ -1,4 +1,4 @@
-from vedge import db, vedge
+from techvaganza import db, app
 from werkzeug import generate_password_hash, check_password_hash
 import datetime, hashlib, uuid, flask.ext.whooshalchemy
 
