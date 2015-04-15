@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/style.css" media="screen" type="text/css" />
+    <script src="static/js/modernizr.js"></script>
+    <link href='static/css/font.css' rel='stylesheet' type='text/css'>
+    <div style="max-width:400px;">
+        <h1 class="tv" id="tv">Techvaganza15</h1>
+        <h1 class="soon" style="position:relative;top:-294px">CominG Soon</h1>
+    </div>
+    <div class="md-modal md-effect-1 md-show">
+        <div class="md-content">
+            <div>
+                <p style="padding:0px">Cheers!!! Techvaganza 2k15 is just around the corner.</p>
+                <p>Registrations Open. <a href="{{ url_for('users.register') }}">Register</a></p>
+                <p>For Any Query <a href="">contact-us@techvaganza.org</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+    <script src='static/js/jquery-1.10.2.js'></script>
+    <script src='static/js/jquery.velocity.min.js'></script>
+    <script src='static/js/blast.js'></script>
+    <script src="static/js/index.js"></script>
+{% endblock %}
