@@ -1,4 +1,10 @@
+# import app
 from app import db
+from flask.ext.security import Security, SQLAlchemyUserDatastore, \
+    UserMixin, RoleMixin, login_required,roles_required,roles_accepted
+from flask_mail import Mail
+from wtforms import Form, BooleanField, TextField, PasswordField, validators
+
 
 # Define models
 roles_users = db.Table('roles_users',
@@ -20,13 +26,9 @@ class User(db.Model, UserMixin):
     college_name = db.Column(db.String(255))
     cell  = db.Column(db.String(255))
     gender= db.Column(db.String(6))
-    batch = db.Column(db.Number(255))
+    batch = db.Column(db.String(255))
     accomodation =db.Column(db.Boolean(255))
     confirmed_at = db.Column(db.DateTime())
     roles = db.relationship('Role', secondary=roles_users,
                             backref=db.backref('users', lazy='dynamic'))
 
-
-# Setup Flask-Security
-user_datastore = SQLAlchemyUserDatastore(db, User, Role)
-security = Security(app, user_datastore)
