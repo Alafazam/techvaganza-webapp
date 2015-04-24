@@ -1,0 +1,1408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pus",
+				"puts"
+			],
+			[
+				"int",
+				"input"
+			],
+			[
+				"te",
+				"temp"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"bor",
+				"borrow"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"power",
+				"power2"
+			],
+			[
+				"log",
+				"log2"
+			],
+			[
+				"cpp",
+				"cpp	myCpp"
+			],
+			[
+				"sc",
+				"scanf"
+			],
+			[
+				"st",
+				"struct	struct"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"v",
+				"value1"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"main",
+				"main	main()"
+			],
+			[
+				"cont",
+				"contents	.contents()"
+			],
+			[
+				"js",
+				"grunt-contrib-jshint"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"de",
+				"dequeue	.dequeue()"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"z",
+				"z	z-index"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"pro",
+				"proto	Prototype"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"max",
+				"maxWeight"
+			],
+			[
+				"get",
+				"getURL"
+			],
+			[
+				"html",
+				"html	.html()"
+			],
+			[
+				"sr",
+				"string"
+			],
+			[
+				"user",
+				"usernames"
+			],
+			[
+				"json",
+				"jQuery.parseJSON	jQuery.parseJSON"
+			],
+			[
+				"j",
+				"jQuery.post	jQuery.post"
+			],
+			[
+				"post",
+				"postData"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"bo",
+				"bogie"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"iss",
+				"isset"
+			],
+			[
+				"r",
+				"r_id"
+			],
+			[
+				"po",
+				"postData"
+			],
+			[
+				"ctype_",
+				"ctype_digit"
+			],
+			[
+				"le",
+				"legend	Tag"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"isse",
+				"isset"
+			],
+			[
+				"cty",
+				"ctype_digit"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"feed",
+				"feed_id"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"compa",
+				"Company"
+			],
+			[
+				"a",
+				"arra1"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"temp",
+				"temp1"
+			],
+			[
+				"arry",
+				"array2"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"number",
+				"number2"
+			],
+			[
+				"numbe",
+				"number1"
+			],
+			[
+				"admin_",
+				"admin_home"
+			],
+			[
+				"p",
+				"printf	printf …"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ex",
+				"expression"
+			],
+			[
+				"str",
+				"strlen"
+			],
+			[
+				"m",
+				"main	main()"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"hea",
+				"head_result"
+			],
+			[
+				"he",
+				"head_result"
+			],
+			[
+				"ne",
+				"nextInt"
+			],
+			[
+				"input",
+				"input2"
+			],
+			[
+				"cou",
+				"count"
+			],
+			[
+				"co",
+				"conductor"
+			],
+			[
+				"half",
+				"half_sum"
+			],
+			[
+				"be",
+				"begin"
+			],
+			[
+				"q",
+				"Queue"
+			],
+			[
+				"da",
+				"data-structures"
+			],
+			[
+				"g",
+				"gotIt"
+			],
+			[
+				"save",
+				"saveFile"
+			],
+			[
+				"pos",
+				"post_content"
+			],
+			[
+				"fil",
+				"fileQueue"
+			],
+			[
+				"qu",
+				"queued"
+			],
+			[
+				"sav",
+				"saved"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"extract",
+				"extract_post"
+			],
+			[
+				"fi",
+				"fileType"
+			],
+			[
+				"dis",
+				"distance"
+			],
+			[
+				"dsi",
+				"distance"
+			],
+			[
+				"app",
+				"approved"
+			],
+			[
+				"jo",
+				"job_profiles"
+			],
+			[
+				"job",
+				"job_id"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"admin",
+				"admin_model"
+			],
+			[
+				"C",
+				"Company_name"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"visi",
+				"visits"
+			],
+			[
+				"Compa",
+				"company_names"
+			],
+			[
+				"c",
+				"checked	Attr"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"appl",
+				"applications"
+			],
+			[
+				"com",
+				"company_names"
+			],
+			[
+				"dead",
+				"deadline1"
+			],
+			[
+				"dea",
+				"deadline"
+			],
+			[
+				"chan",
+				"change_pwd"
+			],
+			[
+				"year",
+				"year_of_admin"
+			],
+			[
+				"login",
+				"login_view"
+			],
+			[
+				"flas",
+				"flashSuccess"
+			],
+			[
+				"interns",
+				"interns"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"inter",
+				"interns"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"DA",
+				"DATETIME"
+			],
+			[
+				"ap",
+				"approved"
+			],
+			[
+				"recruiter_",
+				"recruiter_myjobs"
+			],
+			[
+				"timeline",
+				"timeline-label"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"eli",
+				"Eligible"
+			],
+			[
+				"comp",
+				"Company_name"
+			],
+			[
+				"REC",
+				"recruiter"
+			],
+			[
+				"ses",
+				"session_data"
+			],
+			[
+				"rec",
+				"recruiter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "techvaganza-webapp/app/models.py",
+			"settings":
+			{
+				"buffer_size": 2795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/utils.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "from flask import Flask, render_template\nfrom flask.ext.sqlalchemy import SQLAlchemy\nfrom flask.ext.security import Security, SQLAlchemyUserDatastore, \\\n    UserMixin, RoleMixin, login_required,roles_required,roles_accepted\nfrom flask_mail import Mail\nfrom wtforms import Form, BooleanField, TextField, PasswordField, validators\n\n# Create app\napp = Flask(__name__)\napp.config['DEBUG'] = True\napp.config['SECRET_KEY'] = 'super-secret'\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/bogie'\n\n\n# # After 'Create app'\napp.config['MAIL_SERVER'] = 'localhost'\napp.config['MAIL_PORT'] = 1125\n# app.config['MAIL_USE_SSL'] = True\n# app.config['MAIL_USERNAME'] = 'username'\n# app.config['MAIL_PASSWORD'] = 'password'\nmail = Mail(app)\n\n\n\n\n\napp.config['SECURITY_PASSWORD_HASH'] = 'pbkdf2_sha512'\napp.config['SECURITY_PASSWORD_SALT'] ='f1a4xxd4W!pef'\napp.config['SECURITY_EMAIL_SENDER'] = 'noreply@localhost'\napp.config['SECURITY_CONFIRMABLE'] =  True \napp.config['SECURITY_RECOVERABLE'] =  True\napp.config['SECURITY_REGISTERABLE'] =  True\napp.config['SECURITY_CHANGEABLE'] =  True\n# app.config['SECURITY_PASSWORDLESS'] =True\n\n\n# Create database connection object\ndb = SQLAlchemy(app)\n\n# Define models\nroles_users = db.Table('roles_users',\n        db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),\n        db.Column('role_id', db.Integer(), db.ForeignKey('role.id')))\n\nclass Role(db.Model, RoleMixin):\n    id = db.Column(db.Integer(), primary_key=True)\n    name = db.Column(db.String(80), unique=True)\n    description = db.Column(db.String(255))\n\nclass User(db.Model, UserMixin):\n    id = db.Column(db.Integer, primary_key=True)\n    email = db.Column(db.String(255), unique=True)\n    password = db.Column(db.String(255))\n    active = db.Column(db.Boolean())\n    first_name = db.Column(db.String(255))\n    last_name = db.Column(db.String(255))\n    college = db.Column(db.String(255))\n    cell  = db.Column(db.String(255))\n    gender= db.Column(db.String(6))\n    branch= db.Column(db.String(255))\n    batch = db.Column(db.Integer(255))\n    accomodation =db.Column(db.Boolean(255))\n    confirmed_at = db.Column(db.DateTime())\n    roles = db.relationship('Role', secondary=roles_users,\n                            backref=db.backref('users', lazy='dynamic'))\n\n# Setup Flask-Security\nuser_datastore = SQLAlchemyUserDatastore(db, User, Role)\nsecurity = Security(app, user_datastore)\n\nuser_datastore.create_role(name='User',description='Casual')\nalaf = user_datastore.find_user(email='alafazam@gmail.com')\nuser_datastore.add_role_to_user(alaf,'alaf')\ndb.session.commit()\n\n# @user_registered.connect_via(app)\n# def user_registered_sighandler(app, user, confirm_token):\n#     default_role = user_datastore.find_role(\"User\")\n#     user_datastore.add_role_to_user(user, default_role)\n#     db.session.commit()\n\n\n# # Create a user to test with\n@app.before_first_request\ndef create_user():\n    db.create_all()\n    # user_datastore.create_user(email='matt@nobien.net', password='password')\n    db.session.commit()\n\n\n# Views\n@app.route('/')\n@login_required\ndef home():\n    return render_template('bogie.html',name=\"alaf\")\n\n\n\n@app.route('/admin')\n@roles_required('admin')\ndef admin():\n    return render_template('bogie.html',name=\"alaf\")\n\n\n\n\n\nif __name__ == '__main__':\n    app.run()",
+			"file": "/C/Users/Alafazam/python/security/app.py",
+			"file_size": 3395,
+			"file_write_time": 130742715888081077,
+			"settings":
+			{
+				"buffer_size": 3283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Alafazam/Repos/flask-security/flask_security/core.py",
+			"settings":
+			{
+				"buffer_size": 15408,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/__init__.py",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/views/admin.py",
+			"settings":
+			{
+				"buffer_size": 1230,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "venv/Lib/site-packages/flask_security/datastore.py",
+			"settings":
+			{
+				"buffer_size": 10481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for\nfrom app import db\nfrom flask.ext.security import Security, SQLAlchemyUserDatastore, \\\n    UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user\nfrom flask_mail import Mail\n\n\nevents = Blueprint('events', __name__)\n\n@events.route('/events')\ndef events_main():\n	return render_template('test.html')\n\n\n@events.route('/register_event/', methods=['GET', 'POST'])\ndef register_event():\n	return render_template('test.html')\n\n\n@events.route('/unreg/', methods=['GET', 'POST'])\ndef unreg():\n	return render_template('test.html')\n ",
+			"file": "techvaganza-webapp/app/views/events.py",
+			"file_size": 658,
+			"file_write_time": 130742877347464434,
+			"settings":
+			{
+				"buffer_size": 637,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/views/user.py",
+			"settings":
+			{
+				"buffer_size": 3387,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 1035,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "techvaganza-webapp/app/templates/security/login_user.html",
+			"settings":
+			{
+				"buffer_size": 563,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"int",
+				"Package Control: Install Package"
+			],
+			[
+				"inta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bea",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"SublimeLinter: Toggle Linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"consol",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 424.0
+	},
+	"console":
+	{
+		"height": 214.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/README.md",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/test.html",
+		"/C/Python27/Lib/site-packages/flask_security/utils.py",
+		"/C/Users/Alafazam/Repos/tv15/venv/Lib/site-packages/flask_security/datastore.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/views/__init__.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/views/events.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/helloa.html",
+		"/C/Users/Alafazam/python/practice/bogie.txt",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/security/register_user.html",
+		"/C/Python27/Lib/site-packages/flask_security/forms.py",
+		"/C/Python27/Lib/site-packages/flask_security/templates/security/register_user.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/forms/macros.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/security/_macros.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/security/login_user.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/hello.html",
+		"/C/Users/Alafazam/Repos/skrollr/examples/classic.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/index.html",
+		"/C/Users/Alafazam/Repos/skrollr/examples/bg_constant_speed_more.html",
+		"/C/Users/Alafazam/Repos/flask-security-admin-example/templates/index.html",
+		"/C/Users/Alafazam/Repos/tv15 - Copy/techvaganza-webapp/app/users/views.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/templates/layout.html",
+		"/C/Users/Alafazam/Repos/tv15 - Copy/techvaganza-webapp/app/templates/index.html",
+		"/C/Users/Alafazam/Repos/flask-security-admin-example/main.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/__init__.py",
+		"/C/Users/Alafazam/python/Techvaganza/run.py",
+		"/C/Users/Alafazam/python/Hello/models.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/users/models.py",
+		"/C/Users/Alafazam/Downloads/techvklu_test.sql",
+		"/C/Users/Alafazam/python/Hello/app/__init__.py",
+		"/C/Users/Alafazam/python/Hello/app/test2.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/app/users/__init__.py",
+		"/C/Users/Alafazam/python/security/a.sublime-workspace",
+		"/C/Users/Alafazam/python/security/bogie.html",
+		"/C/Users/Alafazam/Documents/WebDesigning/techvaganza/ankitstarski-techvaganza2014-31e3e20bac20/ankitstarski-techvaganza2014-31e3e20bac20/application/views/about_us_view.php",
+		"/C/Users/Alafazam/Documents/WebDesigning/techvaganza/ankitstarski-techvaganza2014-31e3e20bac20/ankitstarski-techvaganza2014-31e3e20bac20/application/views/welcome_view.php",
+		"/C/Users/Alafazam/Documents/WebDesigning/techvaganza/ankitstarski-techvaganza2014-31e3e20bac20/ankitstarski-techvaganza2014-31e3e20bac20/application/views/hospitality.php",
+		"/C/Python27/Lib/site-packages/flask_security/templates/security/email/change_notice.txt",
+		"/C/Users/Alafazam/python/security/app.py",
+		"/G/techvagaina.txt",
+		"/C/Users/Alafazam/Documents/WebDesigning/techvaganza/ankitstarski-techvaganza2014-31e3e20bac20/ankitstarski-techvaganza2014-31e3e20bac20/application/controllers/hospitality.php",
+		"/C/Python27/Lib/site-packages/flask_security/templates/security/email/change_notice.html",
+		"/C/Users/Alafazam/python/Techvaganza/config.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/forms.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/requirements.txt",
+		"/C/Users/Alafazam/Repos/tv15/requirements.txt",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/run.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/run_prod.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/models.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/decorators.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/constants.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/__init__.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/forms/sessions.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/routes/user.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/models/__init__.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/models/core.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/templates/admin/notifications.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/templates/admin/admin.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/routes/__init__.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/models/scenes.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/methods/users.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/templates/admin/edit.html",
+		"/C/Users/Alafazam/python/Hello/app/views.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/base.html",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/index.html",
+		"/C/Users/Alafazam/python/Techvaganza/app/users/views.py",
+		"/C/Users/Alafazam/Documents/WebDesigning/portal/TNP/tnp-portal/application/config/database.php",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/users/register.html",
+		"/C/Users/Alafazam/Documents/WebDesigning/T15/exploding-text/index.php",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/indexa.html",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/users/profile.html",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/users/login.html",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/forms/macros.html",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/routes/main.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/manage.py",
+		"/C/Users/Alafazam/Repos/tv15/techvaganza-webapp/techvaganza/bower_components/bootstrap-sass-official/README.md",
+		"/C/Users/Alafazam/Programming/SPOJ/STAMPS.cpp",
+		"/C/Users/Alafazam/Desktop/input.txt",
+		"/C/Users/Alafazam/Desktop/stamps.cpp",
+		"/C/Users/Alafazam/python/Techvaganza/app/templates/404.html",
+		"/C/Users/Alafazam/python/Techvaganza/app.db",
+		"/C/Users/Alafazam/python/Techvaganza/shell.py",
+		"/C/Users/Alafazam/python/Techvaganza/app/secret_key",
+		"/C/Users/Alafazam/python/Hello/run.py",
+		"/C/Users/Alafazam/python/Hello/shell.py",
+		"/C/Users/Alafazam/python/Hello/app/templates/users/register.html",
+		"/C/Users/Alafazam/python/Hello/app/users/constants.py",
+		"/C/Users/Alafazam/python/Hello/app/templates/users/profile.html",
+		"/C/Users/Alafazam/python/Hello/app/templates/forms/macros.html",
+		"/C/Users/Alafazam/python/Hello/app/templates/users/login.py",
+		"/C/Users/Alafazam/python/Hello/app/templates/base.html",
+		"/C/Users/Alafazam/python/Hello/app/users/views.py",
+		"/C/Users/Alafazam/python/Hello/app/flask1.py",
+		"/C/Users/Alafazam/python/Hello/config.py",
+		"/C/Users/Alafazam/python/Hello/app/users/decorators.py",
+		"/C/Users/Alafazam/python/Hello/app/users/models.py",
+		"/C/Users/Alafazam/python/Hello/app/users/forms.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/app.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/assets.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/settings.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/models.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/api.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/README.md",
+		"/C/Users/Alafazam/python/Hello/app/templates/index.html",
+		"/C/Users/Alafazam/python/sampleEvent.txt",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/__init__.py",
+		"/C/Users/Alafazam/python/aknin-flask-skeleton-master/aknin-flask-skeleton-master/application/views.py",
+		"/C/Users/Alafazam/Documents/WebDesigning/techvaganza/events.sql",
+		"/C/Users/Alafazam/AppData/Local/Temp/Temp1_microblog-version-0.1.zip/microblog-version-0.1/README.md",
+		"/C/Users/Alafazam/python/Hello/__init__.py",
+		"/C/Users/Alafazam/python/Hello/views.py",
+		"/C/Users/Alafazam/Programming/SPOJ/todo.js",
+		"/C/Users/Alafazam/Programming/SPOJ/LASTDIG.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/TOANDFRO.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/JULKA.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/input.js",
+		"/C/Users/Alafazam/Programming/SPOJ/myfile.txt",
+		"/C/Users/Alafazam/Programming/SPOJ/test.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/BISHOPS.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/PRIME1.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/EPROBLEM.cpp",
+		"/C/Users/Alafazam/Programming/SPOJ/EASYPROB.cpp",
+		"/C/Users/Alafazam/python/Hello/flask1.py",
+		"/C/Users/Alafazam/python/Hello/templates/hello.html",
+		"/C/Users/Alafazam/Programming/SPOJ/FASHION.cpp",
+		"/C/Users/Alafazam/python/Hello/test2.py",
+		"/C/Users/Alafazam/python/flask/docs/tutorial/setup.rst",
+		"/C/Users/Alafazam/python/flask/docs/tutorial/schema.rst",
+		"/C/Users/Alafazam/python/flask/docs/tutorial/folders.rst"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"all_of_them",
+			"filter",
+			"filter_by",
+			"ankit",
+			"ankitstarski",
+			"ankit",
+			"all_products",
+			"all_of_them",
+			"alaf",
+			"event_organisor",
+			"alaf",
+			"ankit",
+			"alaf",
+			"ankitstarski",
+			"alaf",
+			"alafazam",
+			"all_products",
+			"alaf",
+			"event_organisor",
+			"alaf",
+			"products",
+			"category_id",
+			"Category",
+			"Role",
+			"User",
+			"Category",
+			"\\\n    ",
+			"query",
+			"peter",
+			"event_organisor",
+			"username",
+			"User",
+			"Role",
+			"role_id",
+			"filter_by",
+			"filter",
+			"query",
+			"role_id",
+			"current_user",
+			"get_all_organisors",
+			"roles_users",
+			"organisor",
+			"event_organisor",
+			"alaf",
+			"LoginManager",
+			"description",
+			"find_user",
+			"admin",
+			"events",
+			"admin",
+			"events",
+			"admin",
+			"create_organisor",
+			"test",
+			"create_admin",
+			"create_organisor",
+			"register_event",
+			"create_organisor",
+			"admin",
+			"admin_home",
+			"admin",
+			"\\n",
+			"roles",
+			"username",
+			"current_user",
+			"name",
+			"current_user",
+			"BooleanField",
+			"user",
+			"register_user_form",
+			"admin",
+			"create_organisor",
+			"create_admin",
+			"0px",
+			"50000px",
+			"forgot",
+			"current_user",
+			"confirmed_at",
+			"special",
+			"create_all",
+			"special",
+			"description",
+			"<h2>",
+			"</p>",
+			"<p>",
+			"tiger",
+			"SQLALCHEMY_DATABASE_URI",
+			"Login",
+			"login",
+			"Geocoder",
+			"ASSIST",
+			"ACODE",
+			"length",
+			"temp",
+			"multiply",
+			"array",
+			"tem",
+			"int",
+			"length",
+			"temp",
+			"count",
+			"length",
+			"temp",
+			"char(",
+			"input",
+			"length",
+			"num",
+			"input",
+			"len",
+			"length",
+			"temp",
+			"length",
+			"array",
+			"num",
+			"input",
+			"reversal",
+			"length",
+			"1\n",
+			"1",
+			"array",
+			"reverse",
+			"multiply",
+			"reverse",
+			"reversal",
+			"temp",
+			"array",
+			"count",
+			"reverse"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "techvaganza-webapp/app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								747,
+								747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "techvaganza-webapp/app/utils.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Alafazam/python/security/app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2394,
+								2580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 490.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Alafazam/Repos/flask-security/flask_security/core.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7974,
+								7974
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "techvaganza-webapp/app/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1401,
+								1401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 556.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "techvaganza-webapp/app/views/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1209,
+								1209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "venv/Lib/site-packages/flask_security/datastore.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5560,
+								5560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 3315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "techvaganza-webapp/app/views/events.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "techvaganza-webapp/app/views/user.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "techvaganza-webapp/app/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								827,
+								827
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "techvaganza-webapp/app/templates/security/login_user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								81
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 85.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "pro.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

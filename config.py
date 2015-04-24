@@ -7,8 +7,8 @@ WTF_CSRF_ENABLED = True
 SECRET_KEY = "6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J"
 
 
-# SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'app.db')
-SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/bogie'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
+# SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/bogie'
 DATABASE_CONNECT_OPTIONS = {}
 
 THREADS_PER_PAGE = 8
