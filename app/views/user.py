@@ -1,17 +1,24 @@
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
 from app import db
-from flask.ext.security import Security, SQLAlchemyUserDatastore, \
-    UserMixin, RoleMixin, login_required,roles_required,roles_accepted
+from flask_security import Security, SQLAlchemyUserDatastore, \
+    UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user
 from flask_mail import Mail
-from wtforms import Form, BooleanField, TextField, PasswordField, validators
+import pprint
 
 
 user = Blueprint('user', __name__)
 
 @user.route('/')
-@login_required
+@user.route('/index')
 def home():
-    return render_template('index.html')
+	namez=""
+	if current_user.is_authenticated(): namez = current_user.first_name
+	return render_template('index.html',name=namez)	
+
+
+# def _on_identity_loaded(sender, identity):
+#     if hasattr(current_user, 'id'):
+        # identity.provides.add(UserNeed(current_user.id))
 
 
 @user.route('/myEvents')
@@ -23,7 +30,8 @@ def myEvents():
 @user.route('/test')
 @login_required
 def test():
-    return render_template('test.html',name=current_user)
+    print current_user
+    return render_template('test.html',name='bogie')
 
 
 
