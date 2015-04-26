@@ -12,11 +12,18 @@ def events_main():
 	return render_template('test.html')
 
 
-@events.route('/register_event/', methods=['GET', 'POST'])
-def register_event():
+@events.route('/register_event/<event_name>', methods=['POST'])
+@login_required
+def register_event(event_name):
+	# if request.method == 'POST':
+        # register_to_event()
+    # else:
+    	# pass
+		# show_the_login_form()
 	return render_template('test.html')
 
 
 @events.route('/unreg/', methods=['GET', 'POST'])
 def unreg():
 	return render_template('test.html')
+ 

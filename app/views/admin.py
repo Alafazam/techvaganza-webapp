@@ -4,7 +4,7 @@ from flask.ext.security import Security, SQLAlchemyUserDatastore, \
     UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user
 from flask_mail import Mail
 from ..models import User,Role,roles_users
-
+from ..utils import add_event_to_user,get_role,get_event
 
 admin = Blueprint('admin', __name__)
 

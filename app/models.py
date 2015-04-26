@@ -11,6 +11,10 @@ roles_users = db.Table('roles_users',
         db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
         db.Column('role_id', db.Integer(), db.ForeignKey('role.id')))
 
+events_users = db.Table('events_users',
+        db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
+        db.Column('event_id', db.Integer(), db.ForeignKey('events.id')))
+
 
 class Role(db.Model, RoleMixin):
     id = db.Column(db.Integer(), primary_key=True)
@@ -41,18 +45,28 @@ class User(db.Model, UserMixin):
     confirmed_at = db.Column(db.DateTime())
     roles = db.relationship('Role', secondary=roles_users,
             backref=db.backref('users', lazy='dynamic'))
+    events = db.relationship('Events', secondary=events_users,
+            backref=db.backref('users', lazy='dynamic'))
+
     def __str__(self):
-        return "username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s ,"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles)
+        return "<username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s , events:%s>"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles,self.events)
     def __repr__(self):
-        return "username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s ,"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles)
+        return "<username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s , events:%s>"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles,self.events)
 
+    
 
-
-class events(db.Model):
+class Events(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     event_id = db.Column(db.String(255), unique=True)
     name = db.Column(db.String(255))
     view_name=db.Column(db.String(255))
     time = db.Column(db.DateTime())
     category=db.Column(db.String(255))
-    description=db.Column(db.String(255))    
+    description=db.Column(db.String(255))   
+    def __str__(self):
+        return"<id:%s,name:%s>"%(self.id,self.name)
+    def __repr__(self):
+        return"<id:%s,name:%s>"%(self.id,self.name)
+
+        # return "id :%s , event_id :%s , name :%s , view_name :%s , time :%s , category :%s , description:%s "%(self.id,self.event_id, self.name, self.view_name, self.time, self.category, self.description)
+    
