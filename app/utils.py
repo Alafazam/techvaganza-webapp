@@ -41,7 +41,7 @@ def get_user(email):
 	return res
 
 def get_all_organisors():
-	res = User.query.filter(Role.name.in_(['event_organisor'])).all()
+	res = User.query(User.username).filter(User.roles.any(name='event_organisor'))
 	return res
 # filter(Blog.keywords.any(Keyword.name.in_(['keyword1', 'keyword2', ...])))
 

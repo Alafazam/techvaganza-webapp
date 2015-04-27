@@ -1,16 +1,44 @@
-{% macro render_field_with_errors(field) %}
-  <p>
-    {{ field.label }} {{ field(**kwargs)|safe }}
+<!-- {% macro render_field_with_errors(field,placeholder='') %}
+  {{ field(placeholder=placeholder,**kwargs)|safe }}
     {% if field.errors %}
-      <ul>
       {% for error in field.errors %}
-        <li>{{ error }}</li>
+      <p id="e" style="font-size: 10px;  max-width: 260px;  margin: 5px auto;  text-align: left;color:red;">
+        {{ error }}
+      </p>
       {% endfor %}
-      </ul>
     {% endif %}
-  </p>
+{% endmacro %}
+ -->
+{% macro render_field(field) %}
+  {{ field(**kwargs)|safe }}
 {% endmacro %}
 
-{% macro render_field(field) %}
-  <p>{{ field(**kwargs)|safe }}</p>
+{% macro render_remberme(field) %}
+    <p style="text-align:left;margin:5px auto;width:250px;margin-bottom:20px">
+    {{ field.label }} {{ field(**kwargs)|safe }}
+    </p>
 {% endmacro %}
+
+{% macro render_field_reg(field,placeholder='') %}
+  {{ field(placeholder=placeholder,**kwargs)|safe }}
+  {% if field.errors %}
+      {% for error in field.errors %}
+      <p id="e" style="font-size: 10px;  max-width: 260px;  margin: 5px auto;  text-align: left;color:red;">
+        {{ error }}
+      </p>
+      {% endfor %}
+    {% endif %}
+{% endmacro %}
+
+
+{% macro render_field_with_errors(field,placeholder='') %}
+  {{ field(placeholder=placeholder,**kwargs)|safe }}
+  {% if field.errors %}
+      {% for error in field.errors %}
+      <p id="e" style="font-size: 10px;  max-width: 260px;  margin: 5px auto;  text-align: left;color:red;">
+        {{ error }}
+      </p>
+      {% endfor %}
+    {% endif %}
+{% endmacro %}
+

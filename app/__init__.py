@@ -12,14 +12,14 @@ db = SQLAlchemy(app)
 
 # from app.views.user import mod as usersModule
 from models import User,Role,Events
-
+from forms import ExtendedConfirmRegisterForm
 
 # flask_mail
 mail = Mail(app)
 
 # Setup Flask-Security
 user_datastore = SQLAlchemyUserDatastore(db, User, Role)
-security = Security(app, user_datastore)
+security = Security(app, user_datastore,confirm_register_form=ExtendedConfirmRegisterForm)
 
 # login_manager = LoginManager()
 # login_manager.init_app(app)

@@ -1,9 +1,14 @@
 {% from "security/_macros.html" import render_field_with_errors, render_field %}
 {% include "security/_messages.html" %}
-<h1>Resend confirmation instructions</h1>
+  <link rel="stylesheet" href="static/css/style1.css">
+    <div class="wrapper">
+      <div id="box">
+<h3>Resend confirmation instructions</h3>
 <form action="{{ url_for_security('send_confirmation') }}" method="POST" name="send_confirmation_form">
   {{ send_confirmation_form.hidden_tag() }}
-  {{ render_field_with_errors(send_confirmation_form.email) }}
+  {{ render_field_with_errors(send_confirmation_form.email,'Email Address') }}
   {{ render_field(send_confirmation_form.submit) }}
 </form>
-{% include "security/_menu.html" %}
+</div>
+</div>
+<!-- {% include "security/_menu.html" %} -->

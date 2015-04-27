@@ -1,0 +1,39 @@
+Content-Type: multipart/mixed; boundary="===============0157794524=="
+MIME-Version: 1.0
+Subject: Welcome
+From: noreply@techvaganza.org
+To: alaf.aza.m@gmail.com
+Date: Mon, 27 Apr 2015 14:26:25 +0530
+Message-ID: <20150427085624.7016.65848@GamingGiant>
+
+--===============0157794524==
+Content-Type: multipart/alternative; boundary="===============1606740245=="
+MIME-Version: 1.0
+
+--===============1606740245==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Welcome alaf.aza.m@gmail.com!
+
+
+You can confirm your email through the link below:
+
+http://localhost:5000/confirm/WyIxNDgiLCI2ODE3M2E5MzZiMzcyMzczM2FjMjJjNTNhYjU4NGNmZCJd.CB-LOA.iHY54m2O_UTKBB7RUOQ-6IHZaMk
+
+--===============1606740245==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome alaf.aza.m@gmail.com!</p>
+
+
+<p>You can confirm your email through the link below:</p>
+
+<p><a href="http://localhost:5000/confirm/WyIxNDgiLCI2ODE3M2E5MzZiMzcyMzczM2FjMjJjNTNhYjU4NGNmZCJd.CB-LOA.iHY54m2O_UTKBB7RUOQ-6IHZaMk">Confirm my account</a></p>
+
+--===============1606740245==--
+
+--===============0157794524==--
