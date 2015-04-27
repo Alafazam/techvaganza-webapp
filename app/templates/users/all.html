@@ -1,0 +1,153 @@
+{% extends "base.html" %} {% block content %}
+<!-- <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="/static/css/user.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/Obootstrap.min.css" />
+
+<style>body {overflow: hidden;}a {text-decoration: none;}</style>
+<!-- <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>  -->
+<!--[if lte IE 8]>
+			 <link rel="stylesheet" type="text/css" href="/static/css/simple.css" />
+		<![endif]-->
+<div class="container">
+    <div class="st-container">
+        <input type="radio" name="radio-set" checked="checked" id="st-control-1" />
+        <a href="#st-panel-1">My Profile</a>
+        <input type="radio" name="radio-set" id="st-control-2" />
+        <a href="#st-panel-2">Time Line</a>
+        <input type="radio" name="radio-set" id="st-control-3" onclick="window.location.href='/'">
+        <a href="/">Home</a>
+        <!-- <a href="#st-panel-3">Home</a> -->
+
+        <input type="radio" name="radio-set" id="st-control-4" />
+        <a href="#st-panel-4">My Events</a>
+        <input type="radio" name="radio-set" id="st-control-5" />
+        <a href="#st-panel-5">Settings</a>
+        <div class="st-scroll">
+
+            <!-- Placeholder text from http://hipsteripsum.me/ -->
+
+            <section class="st-panel" id="st-panel-1">
+                <div class="st-deco" data-icon="My Profile"></div>
+				<div class="container-fluid">
+				<style>
+				#user{
+					margin-top: 215px;
+				}
+				</style>			
+                <form id='user' class="form-horizontal" role="form" action="{{url_for('user.saveProfile')}}" method="post" accept-charset="utf-8">
+                    <fieldset>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="email">Email Address</label>
+                            <div class="col-md-4">
+                                <input id="email" name="email"  style="text-transform: none;" value="{{ current_user.email}}" type="text" placeholder="Email Address" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="first_name">First Name</label>
+                            <div class="col-md-4">
+                                <input id="first_name" name="first_name"   value="{{ current_user.first_name}}" type="text" placeholder="First Name" class="form-control input-md" required="">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="last_name">Last Name</label>
+                            <div class="col-md-4">
+                                <input id="last_name" name="last_name"   value="{{ current_user.last_name}}" type="text" placeholder="Last Name" class="form-control input-md" required="">
+
+                            </div>
+                        </div>
+
+                        
+                        <!-- Prepended text-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="cell">Phone</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">+91</span>
+                                    <input id="cell" name="cell" value="{{ current_user.cell}}" class="form-control" placeholder="Phone Number" type="text">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="branch">Branch</label>
+                            <div class="col-md-4">
+                                <input id="branch" name="branch" value="{{ current_user.branch}}" type="text" placeholder="Branch" class="form-control input-md">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="batch">Batch</label>
+                            <div class="col-md-4">
+                                <input id="batch" name="batch" value="{{ current_user.batch}}" type="text" placeholder="Year" class="form-control input-md">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="college">College</label>
+                            <div class="col-md-4">
+                                <input id="college" name="college" value="{{ current_user.college}}" type="text" placeholder="College" class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Save"></label>
+                            <button id="save" name="save" class="btn btn-primary" type="submit">
+                            Update Details
+                            </button>
+                        </div>
+
+                    </fieldset>
+                </form>
+				</div>
+
+
+                <!-- <h2>Serendipity</h2>
+                <p>Banksy adipisicing eiusmod banh mi sed. Squid stumptown est odd future nisi, commodo mlkshk pop-up adipisicing retro.</p> -->
+            </section>
+
+            <section class="st-panel st-color" id="st-panel-2">
+                <div class="st-deco" data-icon="Time Line"></div>
+                <h2>22-24 May</h2>
+                <p>Your personalised Timeline Coming is Soon.</p>
+            </section>
+
+            <section class="st-panel" id="st-panel-3">
+                <div class="st-deco" data-icon="Home"></div>
+                <h2><a href="/">Home</a></h2>
+                <!-- <p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p> -->
+            </section>
+
+            <section class="st-panel st-color" id="st-panel-4">
+                <div class="st-deco" data-icon="My Events"></div>
+                <h2>22-24 May</h2>
+                <p>Coming Soon.</p>
+            </section>
+
+            <section class="st-panel" id="st-panel-5">
+                <div class="st-deco" data-icon="Settings"></div>
+                <h2>Settings</h2>
+                <div style="margin-top:325px;height:40px">
+                <p><a href="{{url_for_security('change_password')}}">Change Password</a></p>
+                <p><a href="{{url_for_security('logout')}}">Logout</a></p>
+                </div>
+            </section>
+
+        </div>
+        <!-- // st-scroll -->
+
+    </div>
+    <!-- // st-container -->
+
+</div>
+{% endblock %}

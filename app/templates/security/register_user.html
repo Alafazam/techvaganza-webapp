@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
 {% from "security/_macros.html" import render_field_reg, render_field %}
 {% include "security/_messages.html" %}		
     <link rel="stylesheet" href="static/css/style1.css">
@@ -11,10 +13,10 @@
 		  {{ render_field_reg(register_user_form.email,'Email Address') }}
 		  {{ render_field_reg(register_user_form.password,'Password') }}
 		  {{ render_field_reg(register_user_form.first_name,'First Name') }}
+		  {{ render_field_reg(register_user_form.last_name,'Last Name') }}
 		  {{ render_field_reg(register_user_form.cell,'Phone Number') }}
 		  {{ render_field_reg(register_user_form.gender,'Gender') }}
 		  {{ render_field_reg(register_user_form.college,'College Name') }}
-		  {{ render_field_reg(register_user_form.batch,'Batch') }}
 		  {{ render_field_reg(register_user_form.branch,'Branch') }}
 		  {{ render_field_reg(register_user_form.submit,id='submit') }}
 		</form>
@@ -22,3 +24,4 @@
 		<!-- {% include "security/_menu.html" %} -->
       </div>
     </div>
+{% endblock %}

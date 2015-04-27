@@ -1,6 +1,7 @@
 from flask_security.forms import ConfirmRegisterForm, Required, TextField
 from wtforms import IntegerField
 from wtforms.validators import *
+
 class ExtendedConfirmRegisterForm(ConfirmRegisterForm):
     first_name = TextField('First Name', [Required()])
     last_name = TextField('Last Name', [Required()])

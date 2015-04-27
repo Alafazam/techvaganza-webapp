@@ -1,39 +1,39 @@
-Content-Type: multipart/mixed; boundary="===============0157794524=="
+Content-Type: multipart/mixed; boundary="===============0341969024=="
 MIME-Version: 1.0
 Subject: Welcome
 From: noreply@techvaganza.org
-To: alaf.aza.m@gmail.com
-Date: Mon, 27 Apr 2015 14:26:25 +0530
-Message-ID: <20150427085624.7016.65848@GamingGiant>
+To: a.laf.aza.m@gmail.com
+Date: Tue, 28 Apr 2015 02:53:38 +0530
+Message-ID: <20150427212337.6560.26627@GamingGiant>
 
---===============0157794524==
-Content-Type: multipart/alternative; boundary="===============1606740245=="
+--===============0341969024==
+Content-Type: multipart/alternative; boundary="===============1524443869=="
 MIME-Version: 1.0
 
---===============1606740245==
+--===============1524443869==
 Content-Type: text/plain; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 
-Welcome alaf.aza.m@gmail.com!
+Welcome a.laf.aza.m@gmail.com!
 
 
 You can confirm your email through the link below:
 
-http://localhost:5000/confirm/WyIxNDgiLCI2ODE3M2E5MzZiMzcyMzczM2FjMjJjNTNhYjU4NGNmZCJd.CB-LOA.iHY54m2O_UTKBB7RUOQ-6IHZaMk
+http://localhost:5000/confirm/WyIxNDkiLCI0MGIzZmY4ZDMyYjM0NDBmNDA2NTZhNDQzOGMzYWRiMyJd.CCA6WQ.jqM7xkbBHi7bOGEJXMA_f-HWdu8
 
---===============1606740245==
+--===============1524443869==
 Content-Type: text/html; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 
-<p>Welcome alaf.aza.m@gmail.com!</p>
+<p>Welcome a.laf.aza.m@gmail.com!</p>
 
 
 <p>You can confirm your email through the link below:</p>
 
-<p><a href="http://localhost:5000/confirm/WyIxNDgiLCI2ODE3M2E5MzZiMzcyMzczM2FjMjJjNTNhYjU4NGNmZCJd.CB-LOA.iHY54m2O_UTKBB7RUOQ-6IHZaMk">Confirm my account</a></p>
+<p><a href="http://localhost:5000/confirm/WyIxNDkiLCI0MGIzZmY4ZDMyYjM0NDBmNDA2NTZhNDQzOGMzYWRiMyJd.CCA6WQ.jqM7xkbBHi7bOGEJXMA_f-HWdu8">Confirm my account</a></p>
 
---===============1606740245==--
+--===============1524443869==--
 
---===============0157794524==--
+--===============0341969024==--
