@@ -5,7 +5,10 @@ from flask_security import Security, SQLAlchemyUserDatastore, \
 from flask_mail import Mail
 from flask.ext.login import LoginManager
 from flask.ext.social.views import connect_handler
-from flask.ext.social.utils import get_provider_or_404
+from flask.ext.social import Social, SQLAlchemyConnectionDatastore, \
+     login_failed
+from flask.ext.social.datastore import SQLAlchemyConnectionDatastore
+from flask.ext.social.utils import get_provider_or_404,get_connection_values_from_oauth_response
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
 from flask_security import Security, SQLAlchemyUserDatastore, \
     UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user
@@ -14,12 +17,17 @@ from flask_security import Security, SQLAlchemyUserDatastore, \
 app = Flask(__name__)
 
 
+
 app.config.from_object('config')
+app.config['SOCIAL_FACEBOOK'] = {
+    'consumer_key': '1484405811783447',
+    'consumer_secret': 'ee8930d2e57550ceaf12b04b158c38d1'
+}
 
 db = SQLAlchemy(app)
 
 # from app.views.user import mod as usersModule
-from models import User,Role,Events
+from models import User,Role,Events,Connection
 from forms import ExtendedConfirmRegisterForm
 
 # flask_mail
@@ -28,6 +36,8 @@ mail = Mail(app)
 # Setup Flask-Security
 user_datastore = SQLAlchemyUserDatastore(db, User, Role)
 security = Security(app, user_datastore,confirm_register_form=ExtendedConfirmRegisterForm)
+connection_datastore = SQLAlchemyConnectionDatastore(db, Connection)
+social= Social(app, connection_datastore)
 
 from .utils import *
 
@@ -180,6 +190,39 @@ def registerS(provider_id=None):
         else:
                 flash('Connection Refused','info')
                 return redirect("/register")
+
+
+class SocialLoginError(Exception):
+    def __init__(self, provider):
+        self.provider = provider
+
+
+@app.before_first_request
+def before_first_request():
+    try:
+        models.db.create_all()
+    except Exception, e:
+        app.logger.error(str(e))
+
+@login_failed.connect_via(app)
+def on_login_failed(sender, provider, oauth_response):
+    app.logger.debug('Social Login Failed via %s; '
+                     '&oauth_response=%s' % (provider.name, oauth_response))
+
+    # Save the oauth response in the session so we can make the connection
+    # later after the user possibly registers
+    session['failed_login_connection'] = \
+        get_connection_values_from_oauth_response(provider, oauth_response)
+
+    raise SocialLoginError(provider)
+
+
+@app.errorhandler(SocialLoginError)
+def social_login_error(error):
+    return redirect(
+        url_for('registerS', provider_id=error.provider.id, login_failed=1))
+
+
 
 
 
