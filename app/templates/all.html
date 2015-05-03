@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <!-- <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'> -->
-<link rel="stylesheet" type="text/css" href="/static/css/user.css" />
 <link rel="stylesheet" type="text/css" href="/static/css/Obootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/user.css" />
 
 <style>body {overflow: hidden;}a {text-decoration: none;}</style>
 <!-- <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>  -->
@@ -34,7 +34,7 @@
 					margin-top: 215px;
 				}
 				</style>			
-                <form id='user' class="form-horizontal" role="form" action="{{url_for('user.saveProfile')}}" method="post" accept-charset="utf-8">
+                <form id='user' class="form-horizontal" role="form" action="{{url_for('saveProfile')}}" method="post" accept-charset="utf-8">
                     <fieldset>
                         <!-- Text input-->
                         <div class="form-group">
@@ -119,12 +119,12 @@
             <section class="st-panel st-color" id="st-panel-2">
                 <div class="st-deco" data-icon="Time Line"></div>
                 <h2>22-24 May</h2>
-                <p>Your personalised Timeline Coming is Soon.</p>
+                <p>Your personalised Timeline is Coming Soon.</p>
             </section>
 
             <section class="st-panel" id="st-panel-3">
                 <div class="st-deco" data-icon="Home"></div>
-                <h2><a href="/">Home</a></h2>
+                <h2><a style="font-weight:100;" href="/">Home</a></h2>
                 <!-- <p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p> -->
             </section>
 
@@ -138,8 +138,8 @@
                 <div class="st-deco" data-icon="Settings"></div>
                 <h2>Settings</h2>
                 <div style="margin-top:325px;height:40px">
-                <p><a href="{{url_for_security('change_password')}}">Change Password</a></p>
-                <p><a href="{{url_for_security('logout')}}">Logout</a></p>
+                <p style="position:relative;"><a href="{{url_for_security('change_password')}}">Change Password</a></p>
+                <p style="position:relative;"><a href="{{url_for_security('logout')}}">Logout</a></p>
                 </div>
             </section>
 

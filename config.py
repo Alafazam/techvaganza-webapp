@@ -10,7 +10,7 @@ SECRET_KEY = "6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J6LeYIbsSAAAAACRPIllxA7wvXj
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
 DATABASE_CONNECT_OPTIONS = {}
 
-# Production 
+#/ Production 
 # SQLALCHEMY_DATABASE_URI = 'mysql://techvklu:@techvaganza.org/bogie'
 # SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/bogie'
 
@@ -27,7 +27,7 @@ RECAPTCHA_OPTIONS = {'theme': 'white'}
 
 MAIL_SERVER = 'localhost'
 MAIL_PORT = 1125
-
+# 
 
 
 # MAil server seeting to be changed for MAIL GUN API

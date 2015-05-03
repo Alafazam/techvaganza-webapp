@@ -1,39 +1,29 @@
-Content-Type: multipart/mixed; boundary="===============0341969024=="
+Content-Type: multipart/mixed; boundary="===============0410063115=="
 MIME-Version: 1.0
-Subject: Welcome
+Subject: Password reset instructions
 From: noreply@techvaganza.org
-To: a.laf.aza.m@gmail.com
-Date: Tue, 28 Apr 2015 02:53:38 +0530
-Message-ID: <20150427212337.6560.26627@GamingGiant>
+To: alafazam@gmail.com
+Date: Wed, 29 Apr 2015 20:55:55 +0530
+Message-ID: <20150429152554.5960.25244@GamingGiant>
 
---===============0341969024==
-Content-Type: multipart/alternative; boundary="===============1524443869=="
+--===============0410063115==
+Content-Type: multipart/alternative; boundary="===============2097562792=="
 MIME-Version: 1.0
 
---===============1524443869==
+--===============2097562792==
 Content-Type: text/plain; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 
-Welcome a.laf.aza.m@gmail.com!
+Click the link below to reset your password:
 
-
-You can confirm your email through the link below:
-
-http://localhost:5000/confirm/WyIxNDkiLCI0MGIzZmY4ZDMyYjM0NDBmNDA2NTZhNDQzOGMzYWRiMyJd.CCA6WQ.jqM7xkbBHi7bOGEJXMA_f-HWdu8
-
---===============1524443869==
+http://localhost:5000/reset/WyIyIiwiZmU3NTA5YTIzY2I2MWI2Y2M1ODA5MWE3ZGExODM3M2EiXQ.CCKJgg.Vf12MVSpw_okw3PGRdi2rGbgBdw
+--===============2097562792==
 Content-Type: text/html; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 
-<p>Welcome a.laf.aza.m@gmail.com!</p>
+<p><a href="http://localhost:5000/reset/WyIyIiwiZmU3NTA5YTIzY2I2MWI2Y2M1ODA5MWE3ZGExODM3M2EiXQ.CCKJgg.Vf12MVSpw_okw3PGRdi2rGbgBdw">Click here to reset your password</a></p>
+--===============2097562792==--
 
-
-<p>You can confirm your email through the link below:</p>
-
-<p><a href="http://localhost:5000/confirm/WyIxNDkiLCI0MGIzZmY4ZDMyYjM0NDBmNDA2NTZhNDQzOGMzYWRiMyJd.CCA6WQ.jqM7xkbBHi7bOGEJXMA_f-HWdu8">Confirm my account</a></p>
-
---===============1524443869==--
-
---===============0341969024==--
+--===============0410063115==--

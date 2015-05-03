@@ -1,4 +1,4 @@
-a:hover{
+a,a:hover{
 	text-decoration: none;
 }
 .st-container {
@@ -73,6 +73,7 @@ a:hover{
 
 	/*background: #1C1182;*/
 	background: #150079;
+	/*background: #1954B0;*/
 
 }
 
@@ -93,11 +94,14 @@ a:hover{
 }
 
 .st-container > input:hover + a{
-	background: #AD244F;
+	/*background: #AD244F;*/
+	background: #150079;
+
 }
 
 .st-container > input:hover + a:after {
-	border-bottom-color: #AD244F;
+	/*border-bottom-color: #AD244F;*/
+	border-bottom-color: #150079;
 }
 
 .st-scroll,
@@ -123,7 +127,7 @@ a:hover{
 
 .st-panel{
 	background: #fff;
-	overflow: hidden;
+	overflow: auto;
 } 
 
 #st-control-1:checked ~ .st-scroll {
@@ -285,7 +289,7 @@ a:hover{
 }
 
 .st-panel p {
-	/*position: absolute;*/
+	position: absolute;
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
@@ -296,7 +300,7 @@ a:hover{
 	width: 50%;
 	left: 25%;
 	top: 50%;
-	margin: 10px auto;
+	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
@@ -403,8 +407,14 @@ a:hover{
 	.st-container > a {
 		font-size: 13px;
 	}
+	.st-panel {
+	  overflow-y: auto;
+	}
 }
 @media screen and (max-width: 360px) {
+	.st-panel {
+	  overflow-y: auto;
+	}
 	.st-container > a {
 		font-size: 10px;
 	}

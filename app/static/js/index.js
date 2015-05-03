@@ -25,10 +25,10 @@ $("#tv").hover(
             };
 
             var scale = getRandom(.5, 1.5);
-            if (val == 6) {
-                z = 0;
-                scale = 1;
-            };
+            // if (val == 6) {
+            //     z = 0;
+            //     scale = 1;
+            // };
             var offsetY = 100 * z;
             var offsetX = getRandom(30, 50) * w;
             $(this).velocity({
