@@ -11,7 +11,7 @@ from flask.ext.social.datastore import SQLAlchemyConnectionDatastore
 from flask.ext.social.utils import get_provider_or_404,get_connection_values_from_oauth_response
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
 from flask_security import Security, SQLAlchemyUserDatastore, \
-    UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user
+    UserMixin, RoleMixin, login_required,login_user,roles_required,roles_accepted,current_user
 
 
 app = Flask(__name__)
@@ -134,7 +134,7 @@ def unreg():
 @app.route('/registerS/<provider_id>', methods=['GET', 'POST'])
 def registerS(provider_id=None):
         
-        register_user_form = RegisterForm()
+##        register_user_form = RegisterForm()
 
         if provider_id:
                 
@@ -176,7 +176,7 @@ def registerS(provider_id=None):
                                 user.active=1
                                 db.session.commit()
                                 flash('Account created successfully', 'info')
-                                return redirect(url_for('profile'))
+                                return redirect(url_for('user'))
                         
                         else:
                                 
