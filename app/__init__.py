@@ -4,6 +4,8 @@ from flask_security import Security, SQLAlchemyUserDatastore, \
     UserMixin, RoleMixin, login_required,roles_required,roles_accepted
 from flask_mail import Mail
 from flask.ext.login import LoginManager
+from flask.ext.social.views import connect_handler
+from flask.ext.social.utils import get_provider_or_404
 from flask import Blueprint, request, render_template, flash, g, session, redirect, url_for
 from flask_security import Security, SQLAlchemyUserDatastore, \
     UserMixin, RoleMixin, login_required,roles_required,roles_accepted,current_user
@@ -115,9 +117,69 @@ def unreg():
 	return render_template('test.html')
  
 
+#Social Routes
+#
+#
 
+@app.route('/registerS/<provider_id>', methods=['GET', 'POST'])
+def registerS(provider_id=None):
+        
+        register_user_form = RegisterForm()
 
+        if provider_id:
+                
+                provider = get_provider_or_404(provider_id)
+                connection_values = session.get('failed_login_connection',None)
+        else:
+                
+                provider = None
+                connection_values = None
 
+        print connection_values
+        user = user_datastore.create_user()
+        db.session.commit()
+        print user.id
+##        db.session.commit()
+        access_token=connection_values[u'access_token']
+        if connection_values:
+                print "hello"
+                connection_values['user_id'] = user.id
+                print connection_values['user_id']
+                connectionE=connection_datastore.find_connection(**connection_values)
+                if connectionE is None:
+                        
+                        connection=connection_datastore.create_connection(**connection_values)
+                        if login_user(user):
+                                
+                                db.session.commit()
+                                flash('Account created successfully', 'info')
+                                api=provider.get_api()
+                                print api
+                                profile=api.get_object("me")
+                                print profile
+                                email = profile["email"]
+                                user.email=email
+                                user.username=email
+                                user.first_name=profile["first_name"]
+                                user.last_name=profile["last_name"]
+                                user.gender=profile["gender"]
+                                user.active=1
+                                db.session.commit()
+                                flash('Account created successfully', 'info')
+                                return redirect(url_for('profile'))
+                        
+                        else:
+                                
+                                flash('Failed!Try Again', 'info')
+                                return redirect("/register")
+                        
+                else:
+                        
+                        flash('Failed!Try Again', 'info')
+                        return redirect("/register")
+        else:
+                flash('Connection Refused','info')
+                return redirect("/register")
 
 
 
