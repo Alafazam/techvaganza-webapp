@@ -1,13 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 {% from "security/_macros.html" import render_field_reg, render_field %}
+{% macro social_login(provider_id, display_name) %}
+  <form action="{{ url_for('social.login', provider_id=provider_id) }}" method="POST">
+    <button type="submit" class="btn btn-primary btn-large">Register with {{ display_name }}</button>
+  </form>
+{% endmacro %}
 {% include "security/_messages.html" %}		
     <link rel="stylesheet" href="static/css/style1.css">
     <style>body{margin-top:-10px }</style>
     <div class="wrapper">
+
       <div id="box">
+      
+      
         <img src="/static/lock.png" alt="lock" />
+    {{ social_login('facebook', 'Facebook' )}}
+    <h3>Or</h3>
         <h3>Register</h3>
+       
 		<form action="{{ url_for_security('register') }}" method="POST" name="register_user_form">
 		  {{ register_user_form.hidden_tag() }}
 		  {{ render_field_reg(register_user_form.email,'Email Address') }}
@@ -19,8 +30,10 @@
 		  {{ render_field_reg(register_user_form.college,'College Name') }}
 		  {{ render_field_reg(register_user_form.branch,'Branch') }}
 		  {{ render_field_reg(register_user_form.submit,id='submit') }}
+		
 		</form>
          <a href="{{ url_for_security('login') }}">Login ?</a>
+
 		<!-- {% include "security/_menu.html" %} -->
       </div>
     </div>

@@ -86,6 +86,7 @@ def test():
 @login_required
 def saveProfile():
 	# print request.form
+	
 	current_user.first_name =request.form['first_name']
 	current_user.last_name =request.form.get('last_name')
 	current_user.cell =request.form.get('cell')
@@ -175,8 +176,8 @@ def registerS(provider_id=None):
                                 user.gender=profile["gender"]
                                 user.active=1
                                 db.session.commit()
-                                flash('Account created successfully', 'info')
-                                return redirect(url_for('user'))
+##                                flash('Account created successfully', 'info')
+                                return redirect('/user')
                         
                         else:
                                 
