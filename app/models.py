@@ -47,13 +47,26 @@ class User(db.Model, UserMixin):
             backref=db.backref('users', lazy='dynamic'))
     events = db.relationship('Events', secondary=events_users,
             backref=db.backref('users', lazy='dynamic'))
-
+    connections = db.relationship('Connection',
+            backref=db.backref('user', lazy='joined'), cascade="all")
     def __str__(self):
         return "<username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s , events:%s>"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles,self.events)
     def __repr__(self):
         return "<username :%s , first_name :%s , last_name :%s , email :%s , cell :%s , gender :%s , college :%s , batch :%s , branch :%s , accomodation :%s , time :%s , special :%s , active :%s , confirmed_at :%s , roles :%s , events:%s>"%(self.username,self.first_name,self.last_name,self.email,self.cell,self.gender,self.college,self.batch,self.branch,self.accomodation,self.time,self.special,self.active,self.confirmed_at,self.roles,self.events)
 
-    
+class Connection(db.Model):
+    __tablename__ = "connections"
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    provider_id = db.Column(db.String(255))
+    provider_user_id = db.Column(db.String(255))
+    access_token = db.Column(db.String(255))
+    secret = db.Column(db.String(255))
+    full_name=db.Column(db.String(255))
+    display_name = db.Column(db.String(255))
+    profile_url = db.Column(db.String(512))
+    image_url = db.Column(db.String(512))
+    rank = db.Column(db.Integer)      
 
 class Events(db.Model):
     id = db.Column(db.Integer, primary_key=True)
