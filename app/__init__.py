@@ -147,48 +147,82 @@ def registerS(provider_id=None):
                 connection_values = None
 
         print connection_values
-        user = user_datastore.create_user()
-        db.session.commit()
-        print user.id
+
+                
+        
+
+##        print user.id
 ##        db.session.commit()
-        access_token=connection_values[u'access_token']
+##        access_token=connection_values[u'access_token']
         if connection_values:
-                print "hello"
-                connection_values['user_id'] = user.id
-                print connection_values['user_id']
-                connectionE=connection_datastore.find_connection(**connection_values)
-                if connectionE is None:
+                
+                email=connection_values[u'email']
+##                print email
+                user=user_datastore.find_user(email=email)
+                if(user):
                         
-                        connection=connection_datastore.create_connection(**connection_values)
-                        if login_user(user):
+                        connectionE=connection_datastore.find_connection(**connection_values)
+                        if connectionE is None:
+                                connection_values['user_id'] = user.id
+                                connection=connection_datastore.create_connection(**connection_values)
+                                if login_user(user):
+                                        db.session.commit()
+                                        flash('Facebook account linked successfully with existing id', 'info')
+                                        return redirect('/user')
+                                else:
+                                        flash('Failed to link with Facebook!Try Again', 'info')
+                                        return redirect('/user')
+                                        
+                        else:
+                                if login_user(user):
+##                                        flash(' Facebook Already linked', 'info')
+                                        return redirect('/user')
                                 
-                                db.session.commit()
-                                flash('Account created successfully', 'info')
-                                api=provider.get_api()
-                                print api
-                                profile=api.get_object("me")
-                                print profile
-                                email = profile["email"]
-                                user.email=email
-                                user.username=email
-                                user.first_name=profile["first_name"]
-                                user.last_name=profile["last_name"]
-                                user.gender=profile["gender"]
-                                user.active=1
-                                db.session.commit()
-##                                flash('Account created successfully', 'info')
-                                return redirect('/user')
+                                
+                else:
                         
+##                        print "hello"
+                        user = user_datastore.create_user()
+                        db.session.commit()
+##                        connection_values['user_id'] = user.id
+                        print connection_values['user_id']
+                        connectionE=connection_datastore.find_connection(**connection_values)
+
+                        if connectionE is None:
+                                
+                                connection=connection_datastore.create_connection(**connection_values)
+                                if login_user(user):
+                                        
+                                        db.session.commit()
+                                        flash('Account created successfully', 'info')
+                                        api=provider.get_api()
+##                                        print api
+                                        profile=api.get_object("me")
+##                                        print profile
+                                        email = profile["email"]
+                                        
+                                        user.email=email
+                                        user.username=email
+                                        user.first_name=profile["first_name"]
+                                        user.last_name=profile["last_name"]
+                                        user.gender=profile["gender"]
+                                        user.active=1
+                                        db.session.commit()
+        ##                                flash('Account created successfully', 'info')
+                                        return redirect('/user')
+                                
+                                else:
+                                        
+                                        flash('Failed!Try Again', 'info')
+                                        return redirect("/register")
+                                
                         else:
                                 
                                 flash('Failed!Try Again', 'info')
                                 return redirect("/register")
-                        
-                else:
-                        
-                        flash('Failed!Try Again', 'info')
-                        return redirect("/register")
+                
         else:
+                        
                 flash('Connection Refused','info')
                 return redirect("/register")
 

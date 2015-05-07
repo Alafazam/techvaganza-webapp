@@ -59,6 +59,7 @@ class Connection(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     provider_id = db.Column(db.String(255))
+    email = db.Column(db.String(255), unique=True)
     provider_user_id = db.Column(db.String(255))
     access_token = db.Column(db.String(255))
     secret = db.Column(db.String(255))
