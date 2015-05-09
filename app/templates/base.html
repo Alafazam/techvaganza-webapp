@@ -16,8 +16,8 @@
 
 <body>
     <div id="header">{% block header %}{% endblock %}</div>
+    <link rel="stylesheet" href="/static/css/component.css"> 
     {% if get_flashed_messages(with_categories=true) %}
-    <link rel="stylesheet" href="static/css/component.css"> 
       <div class="md-modal  md-effect-1 md-show" id="modal-1">
           <div class="md-content">
               <h3>Attention</h3>
@@ -27,7 +27,7 @@
                       <li class="message flash-{{ category }}">{{ msg }}</li>
                       {% endfor %}
                   </ul>
-                  <button onclick="classie.toggle(document.getElementById('modal-1'),'md-show');" class="md-close ">Close me!</button>
+                  <button onclick="classie.toggle(document.getElementById('modal-1'),'md-show');" class="md-close ">Close!</button>
               </div>
           </div>
       </div>

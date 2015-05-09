@@ -5,7 +5,10 @@ from flask.ext.security import Security, SQLAlchemyUserDatastore, \
 from flask_mail import Mail
 from flask.ext.script import  Command, Manager, Option
 from app import app,db,user_datastore,User,Role,Events
-from app.utils import add_event_to_user,get_user,get_role,get_event,get_all_events,get_all_organisors
+from app.utils import add_event_to_user,get_user,get_role,get_event,get_all_events,get_all_organisors,unregister_to_event,get_all_user_events
+from werkzeug import secure_filename
+
+import os
 
 manager = Manager(app)
 
@@ -39,6 +42,10 @@ def role(role):
 	print res
 	# return res
 
+@manager.command
+def user_events(email):
+	user = get_user(email)
+	print user.events
 
 @manager.command
 def event(event):
@@ -53,11 +60,18 @@ def create_all():
 	db.create_all()
 	db.session.commit()
 
+
 @manager.command
 def add_event_to_userz(email,event):
 	user = get_user(email)
-	event =Events.query.filter_by(name=event).first()
+	event = Events.query.filter_by(name=event).first()
 	print add_event_to_user(user,event)
+
+@manager.command
+def unregister(email,event):
+	print unregister_to_event(email,event)
+
+
 
 @manager.command
 def see_events():
@@ -66,6 +80,26 @@ def see_events():
 @manager.command
 def organisors():
 	print get_all_organisors()
+
+
+# @manager.command
+# def pathname(filename):
+# 	print os.path.join(app.config['UPLOAD_FOLDER'], filename)
+
+
+# @manager.command
+# def secame(filename):
+# 	print secure_filename(filename)
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     manager.run()

@@ -1,0 +1,121 @@
+{% extends "base.html" %} {% block header %}
+
+<link rel="stylesheet" href="/static/css/normalize.css">
+<!-- <link rel="stylesheet" href="/static/css/style.css" media="screen" type="text/css" /> -->
+<link rel="stylesheet" href="/static/css/Obootstrap.min.css">
+<link rel="stylesheet" href="/static/css/goey_style.css">
+
+<link href='/static/css/font.css' rel='stylesheet' type='text/css'>
+<nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="/user" class="menu-item">Profile</a>
+    <a href="/events" class="menu-item">Events</a>
+    <a href="/" class="menu-item">Home</a>
+    <a href="/gallery" class="menu-item">Gallary</a>
+    <a href="#" class="menu-item">Workshops</a>
+</nav>
+
+<!-- {{regiterz}} -->
+
+
+{% if regiterz==1 %}
+<div id="register_button">
+<form action="/register_event" method="POST">
+    <input type="text" name="event" value="{{event_name}}" hidden>
+    <button id="save" name="save" value="Register"class="btn btn-primary" type="submit">Register</button>
+</form>
+</div>
+{% endif%}
+
+{% if regiterz==2 %}
+<div id="register_button">
+    <a class="btn btn-primary" href="/login">Login to Register</a>
+</div>
+{% endif%}
+
+{% if regiterz==3 %}
+<div id="register_button">
+<form action="/unreg" method="POST">
+    <input type="text" name="event" value="{{event_name}}" hidden>
+    <button id="save" name="save" value="Register"class="btn btn-primary" type="submit">UnRegister</button>
+</form>
+</div>
+{% endif%}
+
+<div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 200 40">
+        <path style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:400;stroke-dashoffset:0" data-0="stroke-dashoffset:400;" data-end="stroke-dashoffset:0;" d="M41.88,12.59H52.4 M41.88,14.3H52.4 M47.14,12.67
+    v13.29 M54.58,12.76h9.68 M55.09,14.48h9.17 M55.09,19.45h7.78 M55.09,24.48h9.35 M54.58,26.16h9.86 M54.94,12.59v13.74
+     M98.05,25.73l-5.76-13.14 M98.09,25.73l5.71-13.14 M98.84,23.99l-5-11.4 M156.14,12.67h9.34 M156.14,14.31h8.08 M157.38,24.36h8.3
+     M156.14,26.03h9.55 M165.16,12.59l-8.69,13.4 M74.97,14.35c-4.15,0-7.5,2.22-7.5,4.94c0,2.75,3.35,4.98,7.5,4.98 M69.74,12.59h5.33
+     M69.74,26.16h5.33 M80.35,19.45h9.95 M80.38,12.59v13.74 M90.3,12.59v13.74 M90.3,18.16l-10-5.22 M89.45,19.45l-9.07-4.65
+     M108.86,12.59l5.77,13.14 M108.96,12.84l-5.88,12.89 M108.17,14.64l4.92,11.43 M105.21,21.05h5.55 M127.74,16.53
+    c-1-2.42-3.14-3.93-5.54-3.93c-3.33,0-6.05,3.02-6.05,6.7c0,3.69,2.72,6.7,6.05,6.7c1.87,0,3.66-0.93,4.8-2.6 M127,23.72v-4.63
+     M122.29,19.42h4.65 M122.29,20.72h4.65 M132.41,20.47h6.69 M135.71,12.59l5.77,13.14 M135.79,12.84l-5.87,12.89 M131.24,22.75h8.95
+     M176.08,20.88h-5.69 M166.65,25.73l5.74-13.14 M172.32,12.84l5.87,12.89 M173.11,14.64l-4.91,11.43 M143.24,12.59v13.74
+     M153.52,12.8v13.74 M153.52,26.11l-10.39-10.84 M143.24,12.97l10.28,11.23 M148.13,20.88l-5.01,5.23 M186.21,12.55V26.7
+     M198.4,13.01h-7.12l-0.74,6.79 M191.37,25.93c1.86,1.35,4.51,0.78,5.89-1.24c1.4-2.08,1.02-4.84-0.83-6.14
+    c-1.85-1.34-4.49-0.76-5.9,1.26 M182.79,15.77l3.3-2.9 M183.81,19.33h4.95 M183.81,21.2h4.95 M191.37,15.18h6.97" />
+
+        <path fill="url(#SVGID_1_)" data-0="fill-opacity:0;" data-end="fill-opacity:1;" d="M29.49,7.94c1.56,1.5,3.44,1.81,5.56,1.13c0.44,1,0.88,1.97,1.3,2.94c0.15,0.35,0.24,0.71,0.36,1.08
+        c-2.03,1.04-3.17,2.65-3.13,4.93c0.04,2.29,1.25,3.86,3.4,4.88c-0.58,1.46-1.15,2.9-1.73,4.35c-0.21-0.05-0.29-0.07-0.38-0.1
+        c-2.08-0.69-4.15-0.18-5.56,1.34l-3.33-3.33c3.78-3.79,3.78-9.92,0-13.71L29.49,7.94z" />
+        <path fill="url(#SVGID_2_)" data-0="fill-opacity:0;" data-end="fill-opacity:1;" d="M3.52,9.42c-0.08-0.03-0.17-0.05-0.38-0.1C2.57,10.76,2,12.21,1.42,13.66
+        c2.16,1.01,3.36,2.59,3.4,4.88c0.04,2.27-1.1,3.88-3.13,4.93c0.12,0.36,0.22,0.73,0.36,1.08c0.42,0.97,0.85,1.94,1.3,2.94
+        c2.12-0.69,4.01-0.37,5.56,1.13l3.5-3.51c-3.78-3.78-3.78-9.92,0-13.7L9.09,8.08C7.68,9.6,5.6,10.11,3.52,9.42" />
+        <path fill="url(#SVGID_3_)" data-0="fill-opacity:0;" data-end="fill-opacity:1;" d="M12.37,25.06l-3.5,3.51c1.5,1.56,1.81,3.44,1.13,5.56c1,0.45,1.97,0.88,2.94,1.3
+        c0.34,0.15,0.71,0.24,1.08,0.36c1.04-2.03,2.65-3.17,4.93-3.13c2.29,0.04,3.87,1.25,4.88,3.4c1.46-0.58,2.9-1.15,4.35-1.73
+        c-0.06-0.21-0.08-0.29-0.1-0.38c-0.69-2.08-0.18-4.15,1.34-5.56l-3.33-3.33C22.29,28.85,16.15,28.85,12.37,25.06" />
+        <path fill="url(#SVGID_4_)" data-0="fill-opacity:0;" data-end="fill-opacity:1;" d="M10.23,2.23c0.06,0.21,0.08,0.29,0.1,0.38C11.02,4.69,10.52,6.76,9,8.17l3.33,3.33
+        c3.79-3.78,9.92-3.78,13.71,0l3.5-3.5c-1.49-1.56-1.81-3.44-1.13-5.56c-1-0.44-1.97-0.88-2.94-1.3c-0.35-0.15-0.71-0.24-1.08-0.36
+        c-1.04,2.03-2.65,3.17-4.93,3.13c-2.29-0.04-3.87-1.25-4.88-3.4C13.12,1.08,11.68,1.65,10.23,2.23" />
+
+
+        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="75.6045" y1="53.2871" x2="108.6973" y2="53.2871">
+            <stop offset="0" style="stop-color:#00A14D" />
+            <stop offset="1" style="stop-color:#00A14D" />
+        </linearGradient>
+        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1.7163" y1="53.6943" x2="34.8091" y2="53.6943">
+            <stop offset="0" style="stop-color:#E21E26" />
+            <stop offset="1" style="stop-color:#E21E26" />
+        </linearGradient>
+        <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="24.1104" y1="90.4336" x2="85.8975" y2="90.4336">
+            <stop offset="0" style="stop-color:#E48324" />
+            <stop offset="1" style="stop-color:#E48324" />
+        </linearGradient>
+        <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="24.5181" y1="16.5464" x2="86.3037" y2="16.5464">
+            <stop offset="0" style="stop-color:#01A0B0" />
+            <stop offset="1" style="stop-color:#01A0B0" />
+        </linearGradient>
+    </svg>
+</div>
+
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;display:none;" version="1.1">
+    <defs>
+        <filter id="shadowed-goo">
+
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+            <feBlend in2="shadow" in="goo" result="goo" />
+            <feBlend in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+    </defs>
+</svg>
+
+{% endblock %}
