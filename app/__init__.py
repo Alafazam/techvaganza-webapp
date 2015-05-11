@@ -72,7 +72,7 @@ def home():
 @app.route('/user')
 @login_required
 def myEvents():
-    return render_template('all.html')
+    return render_template('all.html',facebook_conn=social.facebook.get_connection())
 
 
 @app.route('/test')

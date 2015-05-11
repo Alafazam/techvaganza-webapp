@@ -4,11 +4,33 @@
 <link rel="stylesheet" type="text/css" href="/static/css/user.css" />
 
 <style>body {overflow: hidden;}a {text-decoration: none;}</style>
+{% macro show_provider_button(provider_id, display_name, conn, show_update_form=False) %}
+  <div class="span6">
+   
+   
+    {% if conn %}
+      
+    <!--   <form action="{{ url_for('social.remove_connection', provider_id=conn.provider_id, provider_user_id=conn.provider_user_id) }}?__METHOD_OVERRIDE__=DELETE" method="POST" class="remove-connection">
+        <button type="submit" class="btn btn-danger"><i class="icon-trash icon-white"></i> Remove {{ display_name }} Connection</button>
+      </form> -->
+    {% else %}
+      <form action="{{ url_for('registerS', provider_id=provider_id) }}" method="POST" class="create-connection">
+        <fieldset>
+          <div class="control-group">
+            <button type="submit" class="btn btn-success btn-large"><i class="icon-share icon-white"></i> Connect with {{ display_name }}</button>
+          </div>
+        </fieldset>
+      </form>
+    {% endif %}
+  </div>
+{% endmacro %}
+
 <!-- <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>  -->
 <!--[if lte IE 8]>
 			 <link rel="stylesheet" type="text/css" href="/static/css/simple.css" />
 		<![endif]-->
 <div class="container">
+
     <div class="st-container">
         <input type="radio" name="radio-set" checked="checked" id="st-control-1" />
         <a href="#st-panel-1">My Profile</a>
@@ -22,12 +44,14 @@
         <a href="#st-panel-4">My Events</a>
         <input type="radio" name="radio-set" id="st-control-5" />
         <a href="#st-panel-5">Settings</a>
+
         <div class="st-scroll">
 
             <!-- Placeholder text from http://hipsteripsum.me/ -->
 
             <section class="st-panel" id="st-panel-1">
                 <div class="st-deco" data-icon="My Profile"></div>
+                  {{ show_provider_button('facebook', 'Facebook', facebook_conn) }}
 				<div class="container-fluid">
 				<style>
 				#user{
