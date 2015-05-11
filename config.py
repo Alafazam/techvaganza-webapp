@@ -7,12 +7,12 @@ WTF_CSRF_ENABLED = True
 SECRET_KEY = "6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J"
 
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
+# SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(_basedir, 'bogie.db')
 DATABASE_CONNECT_OPTIONS = {}
 
 #/ Production 
-# SQLALCHEMY_DATABASE_URI = 'mysql://techvklu:@techvaganza.org/bogie'
-# SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/bogie'
+SQLALCHEMY_DATABASE_URI = 'mysql://techvklu:@techvaganza.org/bogie'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/bogie'
 
 THREADS_PER_PAGE = 8
 

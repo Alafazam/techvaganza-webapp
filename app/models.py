@@ -78,9 +78,9 @@ class Events(db.Model):
     category=db.Column(db.String(255))
     description=db.Column(db.String(255))   
     def __str__(self):
-        return"<id:%s,name:%s>"%(self.id,self.name)
+        return"<name:%s,view_name:%s>"%(self.name,self.view_name)
     def __repr__(self):
-        return"<id:%s,name:%s>"%(self.id,self.name)
+        return"<name:%s,view_name:%s>"%(self.name,self.view_name)
 
         # return "id :%s , event_id :%s , name :%s , view_name :%s , time :%s , category :%s , description:%s "%(self.id,self.event_id, self.name, self.view_name, self.time, self.category, self.description)
     
